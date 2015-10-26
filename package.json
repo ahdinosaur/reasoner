@@ -13,6 +13,8 @@
     "url": "https://github.com/jasnell/reasoner"
   },
   "dependencies": {
+    "babel-runtime": "^5.8.29",
+    "babelify": "^6.4.0",
     "linkeddata-vocabs": "^0.7.0",
     "lru-cache": "^2.7.0",
     "n3": "^0.4.4",
@@ -24,5 +26,10 @@
   },
   "engines": {
     "node": ">=4.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }
